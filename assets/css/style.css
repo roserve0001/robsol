@@ -5,85 +5,155 @@
     box-sizing: border-box;
     /* google font family */
     font-family: 'Alegreya SC', serif;
-    /* background-color: black; */
-    background-repeat: no-repeat;
 }
-#start{
-    height: 100vh;
-    width: 100%;
+.body{
     background-color: black;
-    background-image: url(/assets/img/robotics_instruct.svg);
-    background-size: contain;
-    background-position: right;
 }
-#start .navbar nav{
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-    /* background-color: red; */
+.body h1{
+    color: white;
+    font-weight: 800;
 }
-#start .navbar .logo{
+.body h2{
     color: white;
     font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: 00.5s;
 }
-#start .navbar .logo:hover{
-transform: scale(1.2);
+.body p{
+    color: rgb(176, 176, 176);
+    font-size: 16px;
+    font-weight: 400;
 }
-#start span{
+.body span{
     color: red;
 }
-#start .navbar ul li{
+
+
+/* navbar */
+/* navbar */
+
+#navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+}
+#navbar .navbar{
+    margin-bottom: 0;
+    padding: 0;
+}
+#navbar #logo{
+    margin-top: 0.5rem;
+    margin-left: 5rem;
+}
+#navbar #logo .navbar-text{
+    justify-content: left;   
+}
+
+#navbar .navbar-text:hover{
+    transform: scale(1.2);
+}
+#navbar #items{
+    margin-top: 0.5rem;
+    margin-right: 5rem;
+}
+#navbar #logo .navbar-item{
+    justify-content: right;
+}
+#navbar ul li{
     list-style-type: none;
     display: inline-block;
     padding: 1rem 2rem;
 }
-#start .navbar ul li a{
+#navbar ul li a{
     color: white;
     text-decoration: none;
     font-weight: 400;
-}
-#start .navbar ul li a:hover{
+} 
+#navbar ul li a:hover{
     color: red;
     transition: 0.5s;
 }
-#start .navbar #btn{
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    border: 1px transparent;
-    font-weight: 700;
-    font-size: larger;
-    padding: 18px 28px;
-    border-radius: 40px;
-    transform: 0.5s;
+
+
+/* made by */
+
+#madeby{
+    margin: 4vh 0;
+    padding: 1rem 0;
+    /* border: 2px solid red; */
 }
-#start .navbar #btn:hover{
-    transform: scale(1.2);
+#madeby .madeby{
+    background: url(/assets/img/robotics_instruct.svg) no-repeat right;
+    background-size: contain;
+    height: 670px;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
 }
-#start .madeby{
-    position: absolute;
-    top: 30%; 
-    left: 5%;
-    trasform: translateY(-30%)
+#madeby #text{
+    margin: 0;
+    padding-left: 0;
 }
-#start .madeby h1{
-    color: rgb(242, 226, 226);
-    margin: 20px 0px 20px;
-    font-size: 75px;
+
+#madeby .solutions{
+    padding-top: 10rem;
+    justify-content: center;
 }
-#start .madeby p{
-    color: rgb(176, 176, 176);
-    padding-left: 40px;
-    margin: 20px 0px 20px;
-    font-size: 25px;
-}
-#start .madeby .newsl form{
+
+#madeby form{
     width: 380px;
     max-width: 100%;
     position: relative;
+}
+#madeby form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 130px 24px 20px;
+    border: 1px solid red;
+    outline: none;
+    border-radius: 30px;
+}
+#madeby form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 7px 5px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    top: 6px;
+    right: 6px;
+}
 
+/* about */
+#about{
+    margin: 4rem;
+    padding: 2.5rem 0;
+}
+#about .col-md-4{
+    padding: 2rem;
+}
+#about .img{
+    padding-left: 1rem;
+    position: relative;
+}
+#about img{
+    position: relative;
+    height: 15rem;
+    width: 20rem;
+    background-color: white;
+    border-radius: 50%;
+}
+/* easy */
+/* easy */
+#easy .conclusion{
+    justify-content: center;
+    border: 2px solid red;
+    padding-left: 50vh;
+}
+#easy .conclusion button{
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
 }
